@@ -1,0 +1,33 @@
+path:
+    # Initialize with a pretrained model (in this case, a multispeaker model)
+    prev_checkpoint: checkpoints/TCD-TIMIT/TCD-TIMIT.pth.tar
+    # Specify the new checkpoint path
+    new_checkpoint: checkpoints/21M/audiovisual/21M_finetuned.pth.tar
+    result_path: output/21M
+    
+optimizer:
+    batch_size: 32
+    betas: [0, 0.98]
+    eps: 0.000000001
+    weight_decay: 0.0
+    grad_clip_thresh: 1.0
+    grad_acc_step: 1
+    warm_up_step: 4000
+    anneal_steps: [20000, 30000, 40000]
+    anneal_rate: 0.3
+
+step:
+    total_step: 1000
+    log_step: 100
+    val_step: 200
+    save_step: 1000
+
+# Which losses to use, for details see the paper
+#   - a: audio
+#   - b: blendshape
+#   - g: gradient
+#   - f: flow
+#   - l: lipreading
+# Preferably use all of them, unless you have limited GPU memory.
+# In this case, skip the `l` option.
+losses: abgfl

@@ -1,0 +1,30 @@
+# Use the correct subject/dataset name
+dataset: "21M"
+# Check the video fps with `ffprobe` or `mediainfo`
+fps: 25
+FLAME_channels: 56
+
+path:
+    # Where the mp4 videos are stored (supports wildcards)
+    videos_path: path/to/videos/directory
+    # Directory where the transcriptions are stored
+    text_path: path/to/transcriptions/directory
+    # Directory where the extracted audios and transcriptions will be stored (for TTS alignment)
+    tts_path: tts_data/21M
+    # Directory where the preprocessed data will be stored
+    processed_path: processed_data/21M
+
+preprocessing:
+    # How many videos will be used for validation
+    val_size: 14
+    audio:
+        sampling_rate: 22050
+        max_wav_value: 32767
+    stft:
+        filter_length: 1024
+        hop_length: 256
+        win_length: 1024
+    mel:
+        n_mel_channels: 80
+        mel_fmin: 0
+        mel_fmax: 8000

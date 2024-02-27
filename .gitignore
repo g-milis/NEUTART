@@ -1,0 +1,28 @@
+# Trash
+__pycache__
+
+
+# Folders
+assets
+checkpoints
+eval
+output
+processed_data
+processed_videos
+tts_data
+
+
+# Configs
+audiovisual/config/*/
+!audiovisual/config/21M
+
+
+# Models
+audiovisual/hifigan/generator_universal.pth.tar
+audiovisual/visual_sr/data
+
+photorealistic/preprocessing/segmentation/lfw_figaro_unet_256_2_0_segmentation_v1.pth
+
+spectre/pretrained/spectre_model.tar
+spectre/data/FLAME_albedo_from_BFM.npz
+spectre/data/generic_model.pkl
