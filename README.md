@@ -6,7 +6,7 @@ Official implementation of "Neural Text to Articulate Talk: Deep Text to Audiovi
 
 [![Paper](https://img.shields.io/badge/arXiv-2312.06613-brightgreen)](https://arxiv.org/abs/2312.06613)
 &nbsp; [![Project WebPage](https://img.shields.io/badge/Project-webpage-blue)](https://g-milis.github.io/neutart.html)
-&nbsp; <a href="https://youtu.be/TOn0sdo_4c8"><img src="https://img.shields.io/badge/Youtube-Video-red?style=flat&logo=youtube&logoColor=red" alt="Youtube Video"></a>
+&nbsp; <a href="https://youtu.be/W2DNiI0j5a8"><img src="https://img.shields.io/badge/Youtube-Video-red?style=flat&logo=youtube&logoColor=red" alt="Youtube Video"></a>
 
 </div>
 
